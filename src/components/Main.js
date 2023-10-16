@@ -1,4 +1,8 @@
-import React from 'react'
+import React from 'react';
+import logo from '../assets/img/new_user_app.png'
+import topLogo from '../assets/img/logo-white.png'
+import download from '../assets/img/icon/android.png'
+import { Icon } from '@iconify/react';
 
 const Main = () => {
   return (
@@ -11,7 +15,7 @@ const Main = () => {
     <div className="container d-flex align-items-center justify-content-between">
       <div className="logo">
         <a href="index.html">
-          <img src="assets/img/logo-white.png" alt="" className="img-fluid" />
+          <img src={topLogo} alt="" className="img-fluid" />
         </a>
       </div>
       <nav id="navbar" className="navbar">
@@ -72,7 +76,7 @@ const Main = () => {
                 rel="noopener noreferrer"
                 className="btn-get-started scrollto"
               >
-                <img src="assets/img/icon/android.png" width="15%" /> Download
+                <img src={download} width="15%" /> Download
                 App
               </a>
             </div>
@@ -84,7 +88,7 @@ const Main = () => {
           data-aos-delay={280}
         >
           <img
-            src="assets/img/new_user_app.png"
+            src={logo}
             className="img-fluid animated"
             alt=""
           />
@@ -166,7 +170,7 @@ const Main = () => {
             </div>
             <div className="icon-box" data-aos="zoom-in" data-aos-delay={100}>
               <div className="icon">
-                <i className="bx bx-rupee" />
+                <Icon icon="ant-design:stock-outlined" />
               </div>
               <h4 className="title">
                 <a href="">Pay anyone Directly Bank Account.</a>
